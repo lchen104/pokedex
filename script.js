@@ -19,7 +19,7 @@ const colors = {
 }
 
 const fetchPokemons = async () => {
-    for(let i = 1; 1 <= pokemon_count; i++) {
+    for(let i = 1; i <= pokemon_count; i++) {
         console.log(i);
         await getPokemon(i);
     }
@@ -27,5 +27,13 @@ const fetchPokemons = async () => {
 
 
 const getPokemon = async (id) => {
-    const url = `https://pokeapi.co/api/v2/pokemon`
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    console.log(data);
 }
+
+
+const create
+
+// fetchPokemons();
