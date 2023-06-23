@@ -19,7 +19,7 @@ const colors = {
 }
 
 const main_types = Object.keys(colors);
-console.log(colors);
+// console.log(colors);
 
 
 const fetchPokemons = async () => {
@@ -64,7 +64,7 @@ pokemonEl.style.background = color;
     <div class="info">
         <span class="number">#${pokemon.id}</span>
         <h3 class="name">${pokemon.name}</h3>
-        <small class="type">Type <span>${pokemon.type}</span></small>
+        <small class="type">Type <span>${type}</span></small>
     </div>
     `;
 
